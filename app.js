@@ -13,7 +13,8 @@ app.get("/redirect", (req, response) => {
       code: req.query.code,
       grant_type: "authorization_code",
       scope: "wow.profile",
-      redirect_uri: "http://10.0.2.2:3000/redirect",
+      redirect_uri: "https://redirect-tdj-test-l.azurewebsites.net/redirect",
+      //   redirect_uri: "http://10.0.2.2:3000/redirect",
       // redirect_uri: "exp://192.168.1.4:19000/"
     },
     auth: {
@@ -36,7 +37,7 @@ app.get("/health", (req, response) => {
 });
 
 app.get("/", (req, response) => {
-  response.send("ok.");
+  response.send("ok!");
 });
 
 app.listen(port, () =>
