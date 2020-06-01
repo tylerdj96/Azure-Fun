@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/fe0a0b88-80f2-49a7-ae8a-cf17c1168ece/resourceGroups/Redirect-TDJ-Test/providers/Microsoft.Web/sites/Redirect-TDJ-Test",
+    "appService.deploySubpath": "."
+}
