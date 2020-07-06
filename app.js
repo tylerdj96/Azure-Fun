@@ -64,7 +64,7 @@ app.get("/token", async (req, response) => {
       scope: "wow.profile",
       redirect_uri:
         req.query.source === "web"
-          ? "http://10.0.2.2:19006"
+          ? "https://192.168.1.4:19006/"
           : "https://auth.expo.io/@tylerdj96/sam",
     },
     auth: {
