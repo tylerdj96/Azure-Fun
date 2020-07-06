@@ -11,6 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
-    "express": "^4.17.1"
+    "cors": "^2.8.5",
+    "expo-linking": "^1.0.3",
+    "express": "^4.17.1",
+    "simple-oauth2": "^4.1.0"
   }
 }
