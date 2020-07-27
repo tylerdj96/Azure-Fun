@@ -3,5 +3,6 @@
     "appService.zipIgnorePattern": [
         "node_modules{,/**}",
         ".vscode{,/**}"
-    ]
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/fe0a0b88-80f2-49a7-ae8a-cf17c1168ece/resourceGroups/redirect-tdj-test-l-rg/providers/Microsoft.Web/sites/redirect-tdj-test-l"
 }

@@ -64,7 +64,7 @@ app.get("/token", async (req, response) => {
       scope: "wow.profile",
       redirect_uri:
         req.query.source === "web"
-          ? "https://192.168.1.4:19006/"
+          ? "https://192.168.1.2:19006"
           : "https://auth.expo.io/@tylerdj96/sam",
     },
     auth: {
@@ -75,7 +75,9 @@ app.get("/token", async (req, response) => {
     .then((res) => {
       response.status(200).send(res.data);
     })
-    .catch((error) => {});
+    .catch((error) => {
+      response.status(400).send(error.data);
+    });
 });
 
 app.get("/callback", (req, response) => {
